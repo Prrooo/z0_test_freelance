@@ -3,29 +3,49 @@
  * @see https://v0.dev/t/9uT1FPrI9dc
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-import Link from "next/link"
-import { Input } from "@/components/ui/input"
+import Link from "next/link";
+import { Input } from "@/components/ui/input";
 // import { Button } from "@/components/ui/button"
 
 export default function Component() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center">
-        <Link href="#" className="flex items-center justify-center" prefetch={false}>
+        <Link
+          href="#"
+          className="flex items-center justify-center"
+          prefetch={false}
+        >
           <MountainIcon design="h-6 w-6" />
           <span className="sr-only">Acme Inc</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          <Link
+            href="#"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
             Features
           </Link>
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          <Link
+            href="#"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
             Pricing
           </Link>
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          <Link
+            href="#"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
             About
           </Link>
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          <Link
+            href="#"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
             Contact
           </Link>
         </nav>
@@ -36,11 +56,12 @@ export default function Component() {
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Revolutionize Your Business with Our 3D Solutions
+                  <h1 className="text-2xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                    Bringing Your Vision to Life with Expert Freelance Services
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Unlock the power of 3D technology to transform your products, services, and customer experiences.
+                    Partnering with you to create meaningful, impactful
+                    solutions that foster long-term growth and success.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -76,14 +97,17 @@ export default function Component() {
           <div className="px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">About Acme Inc</div>
+                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
+                  About Acme Inc
+                </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Pioneering 3D Solutions for the Future
+                  Let’s Build Something Great Together
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  At Acme Inc, we are dedicated to pushing the boundaries of 3D technology. Our team of experts work
-                  tirelessly to develop innovative solutions that transform the way businesses operate and engage with
-                  their customers.
+                  Acme Inc. specializes in providing top-tier creative design,
+                  web development, and strategic solutions to help businesses
+                  grow and thrive. With a commitment to delivering high-quality,
+                  results-driven services.
                 </p>
               </div>
             </div>
@@ -99,9 +123,12 @@ export default function Component() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent group-hover:opacity-0 transition-opacity duration-300 ease-in-out" />
                 <div className="absolute bottom-0 left-0 p-4 text-white">
-                  <h3 className="text-xl font-bold">Cutting-Edge 3D Technology</h3>
+                  <h3 className="text-xl font-bold">
+                    Cutting-Edge 3D Technology
+                  </h3>
                   <p className="text-sm">
-                    Our proprietary 3D technology delivers unparalleled realism and interactivity.
+                    Our proprietary 3D technology delivers unparalleled realism
+                    and interactivity.
                   </p>
                 </div>
               </div>
@@ -118,7 +145,8 @@ export default function Component() {
                 <div className="absolute bottom-0 left-0 p-4 text-white">
                   <h3 className="text-xl font-bold">Seamless Integration</h3>
                   <p className="text-sm">
-                    Easily integrate our 3D solutions into your existing platforms and workflows.
+                    Easily integrate our 3D solutions into your existing
+                    platforms and workflows.
                   </p>
                 </div>
               </div>
@@ -134,7 +162,10 @@ export default function Component() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent group-hover:opacity-0 transition-opacity duration-300 ease-in-out" />
                 <div className="absolute bottom-0 left-0 p-4 text-white">
                   <h3 className="text-xl font-bold">Unmatched Expertise</h3>
-                  <p className="text-sm">Our team of 3D specialists are here to guide you every step of the way.</p>
+                  <p className="text-sm">
+                    Our team of 3D specialists are here to guide you every step
+                    of the way.
+                  </p>
                 </div>
               </div>
             </div>
@@ -147,8 +178,9 @@ export default function Component() {
                 Unlock the Power of 3D for Your Business
               </h2>
               <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Our 3D solutions are designed to revolutionize the way you showcase your products, engage with
-                customers, and drive innovation.
+                Our 3D solutions are designed to revolutionize the way you
+                showcase your products, engage with customers, and drive
+                innovation.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row lg:justify-end">
@@ -176,7 +208,8 @@ export default function Component() {
                 Experience the Future with Acme Inc
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Join the companies revolutionizing their industries with our cutting-edge 3D solutions.
+                Join the companies revolutionizing their industries with our
+                cutting-edge 3D solutions.
               </p>
             </div>
             <div className="mx-auto w-full max-w-sm space-y-2">
@@ -186,7 +219,11 @@ export default function Component() {
               </form>
               <p className="text-xs text-muted-foreground">
                 Sign up to learn more about our 3D solutions.{" "}
-                <Link href="#" className="underline underline-offset-2" prefetch={false}>
+                <Link
+                  href="#"
+                  className="underline underline-offset-2"
+                  prefetch={false}
+                >
                   Terms &amp; Conditions
                 </Link>
               </p>
@@ -197,16 +234,25 @@ export default function Component() {
           <div className="px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Freelance Projects</div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Explore Our Freelance Work</h2>
+                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
+                  Freelance Projects
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Explore Our Freelance Work
+                </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Check out some of the exciting freelance projects we've worked on for our clients.
+                  Check out some of the exciting freelance projects we've worked
+                  on for our clients.
                 </p>
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
               <div className="relative overflow-hidden transition-transform duration-300 ease-in-out rounded-lg shadow-lg group hover:shadow-xl hover:-translate-y-2">
-                <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
+                <Link
+                  href="#"
+                  className="absolute inset-0 z-10"
+                  prefetch={false}
+                >
                   <span className="sr-only">View Project</span>
                 </Link>
                 <img
@@ -218,12 +264,20 @@ export default function Component() {
                   style={{ aspectRatio: "500/400", objectFit: "cover" }}
                 />
                 <div className="p-4 bg-background">
-                  <h3 className="text-xl font-bold">3D Product Visualization</h3>
-                  <p className="text-sm text-muted-foreground">Photorealistic 3D model for e-commerce</p>
+                  <h3 className="text-xl font-bold">
+                    3D Product Visualization
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    Photorealistic 3D model for e-commerce
+                  </p>
                 </div>
               </div>
               <div className="relative overflow-hidden transition-transform duration-300 ease-in-out rounded-lg shadow-lg group hover:shadow-xl hover:-translate-y-2">
-                <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
+                <Link
+                  href="#"
+                  className="absolute inset-0 z-10"
+                  prefetch={false}
+                >
                   <span className="sr-only">View Project</span>
                 </Link>
                 <img
@@ -236,11 +290,17 @@ export default function Component() {
                 />
                 <div className="p-4 bg-background">
                   <h3 className="text-xl font-bold">Virtual Showroom</h3>
-                  <p className="text-sm text-muted-foreground">Immersive 3D experience for furniture brand</p>
+                  <p className="text-sm text-muted-foreground">
+                    Immersive 3D experience for furniture brand
+                  </p>
                 </div>
               </div>
               <div className="relative overflow-hidden transition-transform duration-300 ease-in-out rounded-lg shadow-lg group hover:shadow-xl hover:-translate-y-2">
-                <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
+                <Link
+                  href="#"
+                  className="absolute inset-0 z-10"
+                  prefetch={false}
+                >
                   <span className="sr-only">View Project</span>
                 </Link>
                 <img
@@ -252,8 +312,12 @@ export default function Component() {
                   style={{ aspectRatio: "500/400", objectFit: "cover" }}
                 />
                 <div className="p-4 bg-background">
-                  <h3 className="text-xl font-bold">Architectural Visualization</h3>
-                  <p className="text-sm text-muted-foreground">Photorealistic 3D models for real estate</p>
+                  <h3 className="text-xl font-bold">
+                    Architectural Visualization
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    Photorealistic 3D models for real estate
+                  </p>
                 </div>
               </div>
             </div>
@@ -261,25 +325,35 @@ export default function Component() {
         </section>
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-muted-foreground">&copy; 2024 Acme Inc. All rights reserved.</p>
+        <p className="text-xs text-muted-foreground">
+          &copy; 2024 Acme Inc. All rights reserved.
+        </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link href="#" className="text-xs hover:underline underline-offset-4" prefetch={false}>
+          <Link
+            href="#"
+            className="text-xs hover:underline underline-offset-4"
+            prefetch={false}
+          >
             Terms of Service
           </Link>
-          <Link href="#" className="text-xs hover:underline underline-offset-4" prefetch={false}>
+          <Link
+            href="#"
+            className="text-xs hover:underline underline-offset-4"
+            prefetch={false}
+          >
             Privacy
           </Link>
         </nav>
       </footer>
     </div>
-  )
+  );
 }
 
-interface inputParam{
-  design : string;
+interface inputParam {
+  design: string;
 }
 
-function MountainIcon(props:inputParam) {
+function MountainIcon(props: inputParam) {
   return (
     <svg
       className={props.design}
@@ -295,5 +369,5 @@ function MountainIcon(props:inputParam) {
     >
       <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
     </svg>
-  )
+  );
 }
