@@ -60,7 +60,7 @@ export default function Component() {
                     Bringing Your Vision to Life with Expert Freelance Services
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    partnering with you to create meaningful, impactful
+                    Partnering with you to create meaningful, impactful
                     solutions that foster long-term growth and success.
                   </p>
                 </div>
