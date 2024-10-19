@@ -246,7 +246,7 @@ export default function Component() {
                   Explore Our Freelance Work
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Check out some of the exciting freelance projects we've worked
+                  Check out some of the exciting freelance projects weve worked
                   on for our clients.
                 </p>
               </div>
