@@ -5,6 +5,7 @@
  */
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
+import Image from "next/image";
 // import { Button } from "@/components/ui/button"
 
 export default function Component() {
@@ -81,11 +82,15 @@ export default function Component() {
                   </Link>
                 </div>
               </div>
-              <div className="flex flex-col justify-center">
-                <div className="aspect-[4/3] rounded-xl bg-muted overflow-hidden">
+              <div className="flex flex-col justify-center shadow-2xl">
+                <div className="aspect-[4/3] bg-muted overflow-hidden rounded-lg">
                   <div>
-                    {/* <ambientLight />
-                    <pointLight position={[10, 10, 10]} /> */}
+                    <Image
+                      src="/images/heroImage.webp"
+                      alt="hero Section Image"
+                      width={500}
+                      height={500} 
+                    />
                     <div />
                   </div>
                 </div>
@@ -112,9 +117,9 @@ export default function Component() {
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-              <div className="relative overflow-hidden rounded-xl shadow-lg group">
+              <div className="relative rounded-lg overflow-hidden rounded-xl shadow-lg group">
                 <img
-                  src="/placeholder.svg"
+                  src="https://i.materialise.com/blog/wp-content/uploads/2016/05/3d-model-by-andy-jones.jpg"
                   alt="About Image"
                   width={550}
                   height={310}
@@ -122,8 +127,8 @@ export default function Component() {
                   style={{ aspectRatio: "550/310", objectFit: "cover" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent group-hover:opacity-0 transition-opacity duration-300 ease-in-out" />
-                <div className="absolute bottom-0 left-0 p-4 text-white">
-                  <h3 className="text-xl font-bold">
+                <div className="absolute bottom-0 left-0 p-4 text-white" style={{color:"white"}}>
+                  <h3 className="text-xl font-bold" >
                     Cutting-Edge 3D Technology
                   </h3>
                   <p className="text-sm">
@@ -132,9 +137,9 @@ export default function Component() {
                   </p>
                 </div>
               </div>
-              <div className="relative overflow-hidden rounded-xl shadow-lg group">
+              <div className="relative rounded-lg overflow-hidden rounded-xl shadow-lg group">
                 <img
-                  src="/placeholder.svg"
+                  src="https://tse1.mm.bing.net/th?id=OIP.QKnu6Nd0bJwAN3qCPwWESQHaEK&pid=Api&P=0&h=220"
                   alt="About Image"
                   width={550}
                   height={310}
@@ -142,7 +147,7 @@ export default function Component() {
                   style={{ aspectRatio: "550/310", objectFit: "cover" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent group-hover:opacity-0 transition-opacity duration-300 ease-in-out" />
-                <div className="absolute bottom-0 left-0 p-4 text-white">
+                <div className="absolute bottom-0 left-0 p-4 text-white" style={{color:"white"}}>
                   <h3 className="text-xl font-bold">Seamless Integration</h3>
                   <p className="text-sm">
                     Easily integrate our 3D solutions into your existing
@@ -150,9 +155,9 @@ export default function Component() {
                   </p>
                 </div>
               </div>
-              <div className="relative overflow-hidden rounded-xl shadow-lg group">
+              <div className="rounded-lg relative overflow-hidden rounded-xl shadow-lg group">
                 <img
-                  src="/placeholder.svg"
+                  src="https://tse4.mm.bing.net/th?id=OIP._bOYLl8jir1fntz3RNw_-wHaEK&pid=Api&P=0&h=220"
                   alt="About Image"
                   width={550}
                   height={310}
@@ -160,9 +165,9 @@ export default function Component() {
                   style={{ aspectRatio: "550/310", objectFit: "cover" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent group-hover:opacity-0 transition-opacity duration-300 ease-in-out" />
-                <div className="absolute bottom-0 left-0 p-4 text-white">
+                <div className="absolute bottom-0 left-0 p-4 text-white " style={{color:"white"}} >
                   <h3 className="text-xl font-bold">Unmatched Expertise</h3>
-                  <p className="text-sm">
+                  <p className="text-sm ">
                     Our team of 3D specialists are here to guide you every step
                     of the way.
                   </p>
@@ -249,14 +254,14 @@ export default function Component() {
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
               <div className="relative overflow-hidden transition-transform duration-300 ease-in-out rounded-lg shadow-lg group hover:shadow-xl hover:-translate-y-2">
                 <Link
-                  href="#"
+                  href="https://rawgit.com/jexp/neo4j-3d-force-graph/master/index.html"
                   className="absolute inset-0 z-10"
                   prefetch={false}
                 >
                   <span className="sr-only">View Project</span>
                 </Link>
                 <img
-                  src="/placeholder.svg"
+                  src="/images/3dVis.png"
                   alt="Freelance Project 1"
                   width={500}
                   height={400}
@@ -281,7 +286,7 @@ export default function Component() {
                   <span className="sr-only">View Project</span>
                 </Link>
                 <img
-                  src="/placeholder.svg"
+                  src="/images/visModel.png"
                   alt="Freelance Project 2"
                   width={500}
                   height={400}
@@ -304,7 +309,7 @@ export default function Component() {
                   <span className="sr-only">View Project</span>
                 </Link>
                 <img
-                  src="/placeholder.svg"
+                  src="/images/shoeModel.png"
                   alt="Freelance Project 3"
                   width={500}
                   height={400}
