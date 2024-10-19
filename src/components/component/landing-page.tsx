@@ -1,7 +1,14 @@
+"use client"
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Component() {
+  const [open,setOpen]=useState(false);
+  const handleContact=()=>{
+    setOpen(!open);
+  }
+
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center">
@@ -44,6 +51,14 @@ export default function Component() {
           </Link>
         </nav>
       </header>
+      <div className="flex justify-center items-center">
+        {open && <div className="flex flex-col justify-center items-center w-2/5 shadow-lg z-10 fixed top-80 rounded-lg" style={{backgroundColor:"white"}}>
+          <a href="mailto:contact@yourdomain.com" className="m-[1vw] px-[2vw] py-[1vw] rounded-lg w-4/5 text-center" style={{backgroundColor:"black", color:"white"}}>Email</a>
+          <div className="mx-[1vw]">Address: H.Q.: 3, H-34, Sector 3, Rohini, Delhi-110085, India</div>
+          <div className="m-[1vw]">Head: +91-9999888671</div>
+          <div className=" absolute top-[1vw] right-[1.5vw] font-bold cursor-pointer" onClick={handleContact}>x</div>
+        </div>}
+      </div>
       <main className="flex-1 ">
         <section className="w-full bg-test_background text-test_background py-12 md:py-24 lg:py-32">
           <div className=" px-4 md:px-6">
@@ -66,13 +81,12 @@ export default function Component() {
                   >
                     Explore Our Solutions
                   </Link>
-                  <Link
-                    href="#"
+                  <button
                     className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                    prefetch={false}
+                    onClick={handleContact}
                   >
                     Contact Us
-                  </Link>
+                  </button>
                 </div>
               </div>
               <div className="flex flex-col justify-center shadow-2xl">
